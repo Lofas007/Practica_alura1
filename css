@@ -1,0 +1,87 @@
+/* Definir la animación suave del fondo */
+@keyframes moverFondoSuave {
+    0% {
+        background-position: 0 0; /* Posición inicial */
+    }
+    50% {
+        background-position: 50px 10px; /* Desplazamiento ligero para simular el movimiento de las olas */
+    }
+    100% {
+        background-position: 0 0; /* Volver a la posición original */
+    }
+}
+body{
+    background-image: url();
+    position: absolute;
+    background-position: center top;
+        background-repeat: no-repeat; /* No repetir la imagen */
+        height: 100px;
+       width: 100px;
+    margin: 0;
+    background-size: cover; /* Asegurar que la imagen cubra todo el fondo */
+    background-attachment: fixed; /* El fondo permanecerá fijo en su posición, sin desplazarse con el scroll */
+    animation: moverFondoSuave 5s ease-in-out infinite; /* Aplicar la animación, con duración de 20s, suavidad, y repetición infinita */
+}
+h1{
+color: #fffefe;
+display: flex;
+text-align: center;
+align-items: center;
+justify-content: center;
+}
+h2{
+ color: #fffefe;
+ justify-content: center;
+ align-items: center;
+}
+p{
+ color:#fffefe;
+ text-align: center;
+ justify-content: center;
+}
+ol{
+    text-decoration-color: rgb(125, 246, 205);
+    display: flexbox 10px 10px 10px 10px;
+    border: solid black;
+    background-color: rgb(242, 246, 246);
+    border-radius: 20px;
+    height: 200px;
+    width: 200px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+input{
+border: solid black;
+width: 200px;
+height: 25px;
+}
+ul{
+    color: rgb(234, 0, 255);
+    justify-content: center;
+    align-items: center;
+    display: flexbox 10px 10px 10px 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+
+}
+body::after{
+    background-image: url(../img/Sin_título.jpg);
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition-timing-function: background 1s lineas;
+}
+button{
+background-color: rgb(27, 163, 163);
+border: solid black;
+    width: 100px;
+    height: 30px;
+    background: rgb(236, 27, 247);
+    transition: background 1s linear;
+  
+    &:hover {
+      background: rgb(247, 243, 20);
+    }
+  }
+  
+
